@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   def profile
-    render json: {current_user: current_user, id: current_user.id}
+    render json: current_user
   end
 
   def create
