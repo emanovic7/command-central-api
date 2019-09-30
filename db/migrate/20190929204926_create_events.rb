@@ -3,10 +3,10 @@ class CreateEvents < ActiveRecord::Migration[5.2]
     create_table :events do |t|
       t.string :title
       t.boolean :allDay
-      t.datetime :start
-      t.datetime :end
+      t.date :start
+      t.date :end
       t.integer :user_id
-      
+
       t.timestamps
     end
   end
