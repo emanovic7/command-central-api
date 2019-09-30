@@ -18,8 +18,8 @@ ActiveRecord::Schema.define(version: 2019_09_29_204926) do
   create_table "events", force: :cascade do |t|
     t.string "title"
     t.boolean "allDay"
-    t.datetime "start"
-    t.datetime "end"
+    t.date "start"
+    t.date "end"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
