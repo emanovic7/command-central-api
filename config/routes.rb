@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :favorites
   resources :reservations
   resources :events
   resources :tasks
