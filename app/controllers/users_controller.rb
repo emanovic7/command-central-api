@@ -15,7 +15,7 @@ class UsersController < ApplicationController
       token = encode_token(user.id)
       render json: {token: token}
     else
-      render json: { errors: user.erros.full_messages }, status: 422
+      render json: { errors: user.errors.full_messages }, status: 422
     end
   end
 
