@@ -5,8 +5,10 @@ class UsersController < ApplicationController
   end
 
   def index
-    users = User.all
-    render json: users
+    # remove after debugging.
+    
+    # users = User.all
+    # render json: users
   end
 
   def create
@@ -26,3 +28,4 @@ class UsersController < ApplicationController
     end
 
 end
+ De
