@@ -6,6 +6,6 @@ class User < ApplicationRecord
   has_many :reservations
   has_many :favorites
 
-  validates :name, :username, presence: true
-  validates :username, uniqueness: true
+  validates :name, :username, :email, presence: true
+  validates :username, :email, uniqueness: true
 end
