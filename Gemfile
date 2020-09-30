@@ -31,6 +31,7 @@ gem 'rack-cors'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -40,6 +41,12 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rspec-rails', '~> 4.0.1'
   gem 'spring-commands-rspec'
+  gem 'pry', '~> 0.13.1'
+  gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+end
+
+group :test do
+  gem 'shoulda-matchers', '~> 4.0'
 end
 
 
